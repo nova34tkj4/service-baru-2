@@ -23,7 +23,7 @@ jobs:
 
       - name: Tag Docker Image
         run: |
-          docker tag simple-docker-app ${{ secrets.DOCKER_USERNAME }}/simple-app:latest
+          docker tag simple-app ${{ secrets.DOCKER_USERNAME }}/simple-app:latest
 
       - name: Push Docker Image
         run: |
